@@ -32,9 +32,9 @@
             <img src="./assets/d4.png" alt="" class="mt-2 p-10">
         </section>
         <section class="w-full flex flex-col items-center">
-    <section class="flex w-full h-screen p-10">
+    <section class="flex flex-col md:flex-row w-full h-screen p-10">
         <!-- <img src="./assets/cn .png" alt="cartoon Netwok logo x" class="w-1/5"> -->
-         <div class="w-1/2">
+         <div class="w-full md:w-1/2 ">
             <img src="./assets/bgleft.png" alt="cartoon Netwok logo" class="w-full h-full"> 
          </div>
          <div class="w-1/2 flex justify-end">
@@ -45,27 +45,55 @@
                 <img src="./assets/c4.png" alt="Image 8" class="w-full h-40 border-4 border-black">
             </div>
             <div class="flex flex-col items-center ">
-                <h2 class="font-crang text-center text-5xl mt-6 text-white absolute">Watch Now :)</h2>
+                <h2 class="font-crang text-center text-xl md:text-5xl mt-6 text-white absolute">Watch Now :)</h2>
                 <img src="./assets/meme.gif" alt="Image 1" class="w-full h-[98%] border-4 border-black">
             </div>
         </div>
     </section>
 </section>
 </main>
-    <section class="flex justify-evenly w-full mt-20 gap-10 px-10">
-        <div class="flex flex-col items-center w-1/2 border-8 border-black p-5 bg-p3">
-            <h1 class="text-center text-5xl font-crang text-p1" style="text-shadow: 2px 3px 3px #000000;">NEW SHOWS</h1>
-            <hr class="w-full mt-5 border-2 border-p4">
-            <p class="text-center text-2xl ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perferendis, iure commodi cum, culpa distinctio dolor repellat dignissimos voluptates deserunt repellendus dolore sequi non quis nisi aliquid veniam velit consectetur?</p>
-            <button class="w-1/5 p-2 border-2 border-p1 mt-5 hover:bg-p1 hover:text-white text-lg font-bold underline">View More</button>
-        </div>
-        <div class="flex flex-col items-center w-1/2 border-8 border-black p-5 bg-p2">
-            <h1 class="text-center text-5xl font-crang text-p1" style="text-shadow: 2px 3px 3px #000000;">POPULAR SHOWS</h1>
-            <hr class="w-full mt-5 border-2 border-p4">
-            <p class="text-center text-2xl ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perferendis, iure commodi cum, culpa distinctio dolor repellat dignissimos voluptates deserunt repellendus dolore sequi non quis nisi aliquid veniam velit consectetur?</p>
-            <button class="w-1/5 p-2 border-2 border-p1 mt-5 hover:bg-p1 hover:text-white text-lg font-bold underline">View More</button>
-        </div>
-    </section>
+<section class="flex flex-col md:flex md:flex-row md:justify-evenly w-full mt-20 gap-10 px-4 md:px-10">
+    <!-- NEW SHOWS -->
+    <fieldset class="flex flex-col items-center w-full md:w-1/2 border-8 border-black p-5 bg-p3">
+
+        <legend class=" text-center text-4xl sm:text-5xl font-crang text-p1" style="text-shadow: 2px 3px 3px #000000;">
+            <img src="./assets/tv.png" alt="" class="w-1/4 sm:w-1/5 md:w-1/6">
+            <legend class="text-center text-4xl sm:text-5xl font-crang text-p1" style="text-shadow: 2px 3px 3px #000000;">
+                NEW SHOWS
+            </legend>
+        </legend>
+        <hr class="w-full mt-5 border-2 border-p4">
+        <p class="text-center text-base sm:text-lg md:text-2xl mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perferendis, iure commodi cum, culpa
+            distinctio dolor repellat dignissimos voluptates deserunt repellendus dolore sequi non quis nisi aliquid
+            veniam velit consectetur?
+        </p>
+        <button
+            class="w-1/2 sm:w-1/3 md:w-1/5 p-2 border-2 border-p1 mt-5 hover:bg-p1 hover:text-white text-sm sm:text-base md:text-lg font-bold underline">
+            View More
+        </button>
+    </fieldset>
+    <!-- POPULAR SHOWS -->
+    <fieldset class="flex flex-col items-center w-full md:w-1/2 border-8 border-black p-5 bg-p2">
+        <legend class=" text-center text-4xl sm:text-5xl font-crang text-p1" style="text-shadow: 2px 3px 3px #000000;">
+            <img src="./assets/tv.png" alt="" class="w-1/4 sm:w-1/5 md:w-1/6">
+            <legend class="text-center text-4xl sm:text-5xl font-crang text-p1" style="text-shadow: 2px 3px 3px #000000;">
+                NEW SHOWS
+            </legend>
+        </legend>
+        <hr class="w-full mt-5 border-2 border-p4">
+        <p class="text-center text-base sm:text-lg md:text-2xl mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet perferendis, iure commodi cum, culpa
+            distinctio dolor repellat dignissimos voluptates deserunt repellendus dolore sequi non quis nisi aliquid
+            veniam velit consectetur?
+        </p>
+        <button
+            class="w-1/2 sm:w-1/3 md:w-1/5 p-2 border-2 border-p1 mt-5 hover:bg-p1 hover:text-white text-sm sm:text-base md:text-lg font-bold underline">
+            View More
+        </button>
+    </fieldset>
+</section>
+
     <section class="flex justify-center ">
         <img src="./assets/party.png" alt="Party pic">
     </section>
@@ -73,7 +101,7 @@
     <section class="flex justify-center w-full">
         <div class="border-4 border-black w-1/3">
             <img src="./assets/t1.png" alt="" class="p-10">
-            <div class="flex flex-col items-center text-4xl font-crang gap-2">
+            <div class="flex flex-col items-center text-xl md:text-4xl font-crang gap-2">
                 <h1>Droping on</h1>
                 <h1 class="font-bold text-p3 animate-bounce">Wednesday</h1>
                 <h1>9:00 AM</h1>
@@ -90,37 +118,106 @@
                 <img src="./assets/ins.png" alt="">
             </div>
         </div>
-        <div class="border-4 border-black">
-            <img src="./assets/win Merch.png" alt="" class=" h-96">
-        </div>
-    </section>
-    
-    <section>
-        <h1 class="text-center text-8xl font-ashington text-p1 mt-6">Watch now</h1>
-        <div class="flex justify-evenly gap-10 mt-2 border-8 border-black p-5 bg-black">
-            <img src="./assets/tom.png" alt="Image 1" class="w-52 h-52 contrast-200 hover:contrast-150">
-            <img src="./assets/dora.png" alt="Image 2" class="w-52 h-52 contrast-200 hover:contrast-150">
-            <img src="./assets/oggy.png" alt="Image 2" class="w-52 h-52 contrast-200 hover:contrast-150">
-            <img src="./assets/d1.png" alt="Image 2" class="w-52 h-52 contrast-200 hover:contrast-150">
+        <div class="border-4 border-black w-1/3">
+            <img src="./assets/hs.png" alt="" class="p-10 ">
+            <div class="flex flex-col items-center text-xl md:text-4xl font-crang gap-2">
+                <h1>Droping on</h1>
+                <h1 class="font-bold text-p3 animate-bounce">Friday</h1>
+                <h1>11:00 AM</h1>
+            </div>
         </div>
     </section>
 
+    <div class="flex justify-evenly mt-10">
+        <div>
+            <img src="./assets/review.png" alt="" class="w-full h-60">
+            <div class="flex justify-evenly mt-20">
+                <div class="flex flex-col items-center gap-2">
+                <h2 class="font-bold text-2xl p-3 font-crang text-p1">Our Staff</h2>
+                <i>Jhon Deo</i>
+                <i>Daniel Anderson</i>
+                <i>Tommy hits</i>
+                <i>Shane Waarde</i>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <h2 class="font-bold text-2xl p-3 font-crang text-p1">Designers</h2>
+                <i>Michael Brown</i>
+                <i>Sarah Wilson</i>
+            </div>
+            <div class="flex flex-col items-center">
+                <div  class="flex flex-col items-center gap-2">
+                    <h2 class="font-bold text-2xl p-3 font-crang text-p1">Marketers</h2>
+                    <i>David Smith</i>
+                    <i>James Johnson</i>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <h2 class="font-bold text-2xl p-3 font-crang text-p1">Post Producers</h2>
+                    <i>Robert Jones</i>
+                    <i>William Harris</i>
+                </div>
+            </div>
+            </div>
+        </div>
+        <fieldset class="flex flex-col w-1/3 justify-center border-8 border-black p-20 bg-p2">
+            <legend class="text-center text-6xl font-ashington"> <img src="./assets/p2.png" alt="">Write a Review</legend>
+            <input type="text" name="" id="" class="border-2 border-black p-2 mt-5" placeholder="Enter your Name">
+            <input type="email" name="" id="" class="border-2 border-black p-2 mt-5" placeholder="Enter your Email">
+            <textarea name="" id="" class="border-2 border-black p-2 mt-5" placeholder="Enter your Message"></textarea>
+            <button
+                class="w-3/5 p-2 border-2 border-p1 mt-5 hover:bg-p1 hover:text-white text-lg font-bold underline">Submit</button>
+        </fieldset>
+    </div>
+
+    <section class="flex flex-col items-center px-4 md:px-8">
+        <h1 class="text-center text-5xl sm:text-6xl md:text-8xl font-ashington text-p1 mt-6">
+            Watch Now
+        </h1>
+        <div
+            class="flex flex-wrap justify-center gap-6 md:gap-10 mt-4 border-4 sm:border-8 border-black p-4 sm:p-5 bg-black"
+        >
+            <img
+                src="./assets/tom.png"
+                alt="Image 1"
+                class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 contrast-200 hover:contrast-150"
+            />
+            <img
+                src="./assets/dora.png"
+                alt="Image 2"
+                class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 contrast-200 hover:contrast-150"
+            />
+            <img
+                src="./assets/oggy.png"
+                alt="Image 3"
+                class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 contrast-200 hover:contrast-150"
+            />
+            <img
+                src="./assets/d1.png"
+                alt="Image 4"
+                class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 contrast-200 hover:contrast-150"
+            />
+        </div>
+    </section>    
+
     <a href="/" class="flex justify-center underline underline-offset-2 mt-10 text-2xl text-p3">Go to International Site</a>
-    <footer class="flex justify-center items-center p-10 gap-32">
-        <div class="flex flex-col underline underline-offset-2 gap-2">
+    <footer class="flex flex-wrap justify-center items-center p-6 gap-10 md:gap-32">
+        <!-- Preferences Links -->
+        <div class="flex flex-col underline underline-offset-2 gap-2 text-center md:text-left">
             <a href="/">Manage Preferences</a>
             <a href="/">Terms of Use</a>
             <a href="/">Trademarks information</a>
         </div>
-        <div class="flex flex-col underline underline-offset-2 gap-2">
+        <!-- Policy Links -->
+        <div class="flex flex-col underline underline-offset-2 gap-2 text-center md:text-left">
             <a href="/">Privacy Policy</a>
             <a href="/">International Site</a>
             <a href="/">Details of Broadcasters</a>
         </div>
-        <div class="flex">
-            <a href="/"><img src="./assets/cn2.png" alt="cn logo" class="w-32"></a>
+        <!-- Logo -->
+        <div class="flex justify-center md:justify-start">
+            <a href="/"><img src="./assets/cn2.png" alt="cn logo" class="w-24 sm:w-28 md:w-32"></a>
         </div>
     </footer>
+    
     <i class="text-lg">copyright &copy; 2023 Cartoon Network International</i>
 </body>
 
